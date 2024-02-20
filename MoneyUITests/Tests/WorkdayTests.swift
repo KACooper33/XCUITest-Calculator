@@ -17,13 +17,11 @@ final class WorkdayTests: XCTestCase{
     }
     
     override func tearDown() {
-        //
     }
     
     func testSetWorkweekToStandard9To5(){
         HomePage()
             .VerifyMakeableMoneyValueGreaterThan(expectedValue: 50)
-            .tapSettings()
     }
 }
 
