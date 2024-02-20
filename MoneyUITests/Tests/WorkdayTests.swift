@@ -22,6 +22,7 @@ final class WorkdayTests: XCTestCase{
     
     func testSetWorkweekToStandard9To5(){
         HomePage()
+            .VerifyMakeableMoneyValueGreaterThan(expectedValue: 50)
             .tapSettings()
     }
 }

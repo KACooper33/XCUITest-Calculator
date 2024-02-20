@@ -10,12 +10,15 @@ import XCTest
 
 public class HomePage: BaseTest{
     override var rootElement: XCUIElement {
-        return app.buttons["Help"]
+        return button("Help")
     }
     
     // Page Elements
-    lazy var helpButton = app.buttons["Help"]
-    lazy var settingsButton = app.buttons["Settings"]
+    lazy var helpButton = button("Help")
+    lazy var settingsButton = button("Settings")
+    lazy var moneyMakeableLabel = text("moneyMakeableLabel")
+    lazy var timeWorkableLabel = text("timeWorkableLabel")
+
 
     @discardableResult
     func tapHelp(completion: Completion = nil) -> Self {
@@ -30,4 +33,16 @@ public class HomePage: BaseTest{
         settingsButton.tap()
         return self
     }
+    
+    @discardableResult
+    func VerifyMakeableMoneyValueGreaterThan(completion: Completion = nil, expectedValue: Double) -> Self {
+        log("Verifying MakeableMoney Label is greater than \(expectedValue)")
+        
+        var rawvalue = moneyMakeableLabel.label
+        rawvalue.removeFirst()
+        let value = Double(rawvalue) ?? 0
+        XCTAssert(value > expectedValue, "MakeableMoney \(value) was not greater than \(expectedValue)")
+        return self
+    }
+    
 }
