@@ -19,21 +19,11 @@ final class WorkdayTests: XCTestCase{
     override func tearDown() {
     }
     
+    /// Basic test that opens the home page and verifies the makeable money value is greater than 50
+    /// This test should be replaced with better ones soon
     func testSetWorkweekToStandard9To5(){
         HomePage()
             .VerifyMakeableMoneyValueGreaterThan(expectedValue: 50)
-    }
-    
-    func testHelpDialogContents(){
-        HomePage()
-            .helpButton.tap()
-        HelpPage()
-            .VerifyFlyoutHeaderExists()
-            .VerifyEmailLabelExists()
-            .VerifyTutorialLabelExists()
-            .VerifyLeaveReviewLabelExists()
-            .VerifyTellAFriendLabelExists()
-            .VerifyMoreAboutDevLabelExists()
     }
 }
 

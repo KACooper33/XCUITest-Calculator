@@ -10,33 +10,39 @@ import XCTest
 
 public class SettingsPage: BaseTest{
     override var rootElement: XCUIElement {
-        return app.buttons["M"]
+        return text("Settings")
     }
     
     // Page Elements
-    lazy var mButton = app.buttons["M"]
-    lazy var wButton = app.buttons["W"]
-    lazy var doneButton = app.buttons["Done"]
+    lazy var settingsLabel = text("Settings")
+    lazy var mButton = button("M")
+    lazy var wButton = button("W")
+    lazy var doneButton = button("Done")
 
     @discardableResult
-    func tapMButton(completion: Completion = nil) -> Self {
+    func TapMButton(completion: Completion = nil) -> Self {
         log("tap the M button")
         mButton.tap()
         return self
     }
     
     @discardableResult
-    func tapWButton(completion: Completion = nil) -> Self {
+    func TapWButton(completion: Completion = nil) -> Self {
         log("tap the W button")
         wButton.tap()
         return self
     }
     
     @discardableResult
-    func tapDoneButton(completion: Completion = nil) -> Self {
+    func TapDoneButton(completion: Completion = nil) -> Self {
         log("tap the Done button")
         doneButton.tap()
         return self
+    }
+    
+    func VerifySettingsLabelExists(completion: Completion = nil) -> Bool {
+        log("Verifying the Settings label exists")
+        return settingsLabel.exists
     }
     
 }

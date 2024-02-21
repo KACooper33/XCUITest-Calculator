@@ -20,6 +20,8 @@ public class HomePage: BaseTest{
     lazy var timeWorkableLabel = text("timeWorkableLabel")
 
 
+    
+    // Methods
     @discardableResult
     func tapHelp(completion: Completion = nil) -> Self {
         log("tap the Help button")
@@ -32,6 +34,11 @@ public class HomePage: BaseTest{
         log("tap the Settings button")
         settingsButton.tap()
         return self
+    }
+    
+    func VerifyHelpLabelExists(completion: Completion = nil) -> Bool {
+        log("Verifying the Help label exists")
+        return helpButton.exists
     }
     
     @discardableResult
