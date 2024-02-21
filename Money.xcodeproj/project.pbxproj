@@ -37,6 +37,7 @@
 		97A9600B2B82DE1B00B61CE2 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9600A2B82DE1B00B61CE2 /* HomePage.swift */; };
 		97A9600D2B82EFC200B61CE2 /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9600C2B82EFC200B61CE2 /* SettingsPage.swift */; };
 		97A9600F2B853F5200B61CE2 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9600E2B853F5200B61CE2 /* PerformanceTests.swift */; };
+		97A960112B855D9400B61CE2 /* HelpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A960102B855D9400B61CE2 /* HelpPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		97A9600A2B82DE1B00B61CE2 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		97A9600C2B82EFC200B61CE2 /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
 		97A9600E2B853F5200B61CE2 /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
+		97A960102B855D9400B61CE2 /* HelpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpPage.swift; sourceTree = "<group>"; };
 		97DF01772B82798300E8DFB8 /* MoneyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -280,6 +282,7 @@
 				97A960082B82DA5F00B61CE2 /* BaseTest.swift */,
 				97A9600A2B82DE1B00B61CE2 /* HomePage.swift */,
 				97A9600C2B82EFC200B61CE2 /* SettingsPage.swift */,
+				97A960102B855D9400B61CE2 /* HelpPage.swift */,
 			);
 			path = PageObjects;
 			sourceTree = "<group>";
@@ -550,6 +553,7 @@
 				97A960092B82DA5F00B61CE2 /* BaseTest.swift in Sources */,
 				97A960072B82D93400B61CE2 /* WorkdayTests.swift in Sources */,
 				97A9600D2B82EFC200B61CE2 /* SettingsPage.swift in Sources */,
+				97A960112B855D9400B61CE2 /* HelpPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

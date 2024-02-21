@@ -56,4 +56,9 @@ public class BaseTest{
     func text(_ name: String) -> XCUIElement{
         return app.staticTexts[name]
     }
+    
+    //Images
+    func image(_ name: String) -> XCUIElement{
+        return app.images[name]
+    }
 }

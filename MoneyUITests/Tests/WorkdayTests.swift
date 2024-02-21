@@ -23,5 +23,17 @@ final class WorkdayTests: XCTestCase{
         HomePage()
             .VerifyMakeableMoneyValueGreaterThan(expectedValue: 50)
     }
+    
+    func testHelpDialogContents(){
+        HomePage()
+            .helpButton.tap()
+        HelpPage()
+            .VerifyFlyoutHeaderExists()
+            .VerifyEmailLabelExists()
+            .VerifyTutorialLabelExists()
+            .VerifyLeaveReviewLabelExists()
+            .VerifyTellAFriendLabelExists()
+            .VerifyMoreAboutDevLabelExists()
+    }
 }
 
